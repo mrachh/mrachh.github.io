@@ -1,5 +1,6 @@
 ---
 permalink: /
+title: ""
 redirect_from: 
   - /about/
   - /about.html
@@ -8,10 +9,10 @@ redirect_from:
 
 Contact Details
 ======
-Office: 104-A
-Department of Mathematics
-Indian Institute of Technology Bombay
-Mumbai - 400076
+| Office: 104-A
+| Department of Mathematics
+| Indian Institute of Technology Bombay
+| Mumbai - 400076
 
 Research Themes
 ======
