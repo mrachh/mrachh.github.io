@@ -1,9 +1,8 @@
 ---
 title: "Accurate derivative evaluation for any Grad--Shafranov solver"
 collection: publications
-permalink: /publication/2016-01-01-Accurate-derivative-evaluation-for-any-Grad-Shafranov-solver
 date: 2016-01-01
 venue: 'Journal of Computational Physics'
-citation: ' Lee Ricketson,  Antoine Cerfon,  Manas Rachh,  Jeffrey Freidberg, &quot;Accurate derivative evaluation for any Grad--Shafranov solver.&quot; Journal of Computational Physics, 2016.'
+arxivurl: 'https://arxiv.org/abs/1507.07444' 
+paperurl: 'https://doi.org/10.1016/j.jcp.2015.11.015'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=Accurate+derivative+evaluation+for+any+Grad++Shafranov+solver){:target="_blank"} for full citation
