@@ -70,6 +70,8 @@
       <p>Recommended citation: {{ post.citation }}</p>
     {% elsif post.paperurl and post.bibtexurl %}
       <p><a href=" {{ post.paperurl }} ">Journal</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.paperurl and post.arxivurl %}
+      <p><a href=" {{ post.paperurl }} ">Journal</a> | <a href="{{ post.arxivurl }}">arXiv</a></p>
     {% elsif post.paperurl %}
       <p><a href=" {{ post.paperurl }} ">Journal</a></p>
     {% elsif post.arxivurl and post.bibtexurl %}
