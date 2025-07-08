@@ -1,9 +1,8 @@
 ---
 title: "A fluctuating boundary integral method for Brownian suspensions"
 collection: publications
-permalink: /publication/2018-01-01-A-fluctuating-boundary-integral-method-for-Brownian-suspensions
 date: 2018-01-01
 venue: 'Journal of Computational Physics'
-citation: ' Yuanxun Bao,  Manas Rachh,  Eric Keaveny,  Leslie Greengard,  Aleksandar Donev, &quot;A fluctuating boundary integral method for Brownian suspensions.&quot; Journal of Computational Physics, 2018.'
+arxivurl: 'https://arxiv.org/abs/1709.01480' 
+paperurl: 'https://doi.org/10.1016/j.jcp.2018.08.021'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=A+fluctuating+boundary+integral+method+for+Brownian+suspensions){:target="_blank"} for full citation
