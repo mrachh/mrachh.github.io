@@ -1,3 +1,122 @@
+<head>
+<meta charset="UTF-8" />
+<style>
+.container {
+    width:75%;
+    padding:0px;
+    margin-left:auto; 
+    margin-right:auto;
+    font-family:Helvetica;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius:5px;
+    padding: 10px;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius:5px;
+    padding: 7px;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius:5px;
+    padding: 2px;
+}
+
+#header {
+    background-color:white;
+    color:black;
+    width:50%;
+    float:left;
+    font-family:Helvetica;
+}
+#headerimg {
+    background-color:white;
+    color:black;
+    width:40%;
+    float:right;
+    font-family:Helvetica;
+}
+#headerimg2 {
+    background-color:white;
+    color:black;
+    width:40%;
+    float:left;
+    font-family:Helvetica;
+}
+
+#section {
+    width:85%;
+    padding:0px;
+    float: left;
+    max-width:850px;
+    font-family:Helvetica;
+}
+
+#jlink {
+    margin-top:4px;
+    float: left;
+    font-family:Helvetica;
+}
+
+#section3 {
+    width:85%;
+    margin-bottom: 15px;
+    float: left;
+    max-width:850px;
+    font-family:Helvetica;
+}
+
+#section1 {
+    width:65%;
+    padding:0px;
+    float: left;
+    max-width:850px;
+    font-family:Helvetica;
+}
+
+#section2 {
+    width:30%;
+    padding:0px;
+    float: left;
+    margin-top: 7px;
+    font-family:Helvetica;
+}
+
+
+.column {
+    width:75%;
+    padding:0px;
+}
+
+
+.left { width: 75%;
+    float: left;
+}
+
+.right { width: 25%;
+    float: right;
+    vertical-align: middle;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
 ---
 layout: archive
 title: "Publications"
@@ -11,26 +130,600 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single-pub.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single-pub.html %}
-  {% endfor %}
-{% endif %}
+<ul>
+
+  <li>
+    On the construction of scattering matrices for irregular or elongated
+    enclosures using Green's representation formula<br>
+    <a href=https://sciences.ucf.edu/math/borges/>C. Borges</a>,
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>, and 
+    M. Rachh <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2408.02881>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10915-024-02727-7>journal</a> 
+    </div> 
+  </li>
+  <br> <br>
+
+  <li> 
+    Integral formulation of Dirac singular waveguides <br>
+    <a href=https://www.stat.uchicago.edu/~guillaumebal/>G. Bal</a>,
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    <a href=https://cam.uchicago.edu/people/profile/solomon-quinn/>S. Quinn</a>, and 
+    M. Rachh
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2312.16701>arxiv</a>
+    </div>
+  </li> 
+  <br> <br>
+
+  <li>
+    On quadrature for singular integral operators with complex
+    symmetric quadratic forms <br>
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    M. Rachh, and
+    <a href=https://www.uml.edu/sciences/mathematics/people/wu-bowei.aspx>B. Wu</a> <br> 
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2312.06812>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.acha.2024.101721>journal</a> 
+    </div> 
+  </li>
+  <br> <br>
+
+  <li>
+    Random walks in frequency and the reconstruction of obstacles
+    with cavities from multi-frequency data <br>
+    <a href=http://askhamwhat.github.io/>T. Askham</a>, 
+    <a href=https://sciences.ucf.edu/math/borges/>C. Borges</a>,
+    <a href=http://www.jghoskins.com>J. Hoskins</a>, and 
+    M. Rachh <br> 
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2308.00559>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10915-023-02406-z>journal</a> 
+    </div>  
+  </li>  
+  <br> <br>
+
+  <li>
+    Fast adaptive high-order integral equation methods for
+    electromagnetic scattering from smooth perfect electric
+    conductors <br>
+    F. Vico, 
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>, and 
+    M. Rachh <br> 
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2306.04473>arxiv</a>
+    &nbsp;
+    </div>  
+  </li>  
+  <br> <br>
+
+ 
+  <li>
+    Uniform approximation of common Gaussian process kernels using
+    equispaced Fourier grids <br>
+    <a href=https://users.flatironinstitute.org/~ahb/>A. Barnett</a>, 
+    <a href=https://www.simonsfoundation.org/people/philip-greengard/>P. Greengard</a>, and  
+    M. Rachh <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2305.11065>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1088/1361-6420/acb2ec>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+  <li>
+    A new version of the adaptive fast Gauss transform for discrete
+    and continuous sources <br>
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>,
+    <a href= https://simonsfoundation.org/people/shidong-jiang/> S. Jiang</a>, 
+    M. Rachh, and
+    <a href=https://ymsc.tsinghua.edu.cn/en/info/1033/1226.htm>J. Wang</a> 
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2305.07165>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/23M1572453>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+
+  <li> 
+    Integral formulation of Klein-Gordon singular waveguides <br>
+    <a href=https://www.stat.uchicago.edu/~guillaumebal/>G. Bal</a>,
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    <a href=https://cam.uchicago.edu/people/profile/solomon-quinn/>S. Quinn</a>, and 
+    M. Rachh
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2212.12619>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1002/cpa.22227>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+
+  <li> 
+    FMM-accelerated solvers for the Laplace–Beltrami problem on complex surfaces in three dimensions <br>
+    <a href=https://scholar.google.com/citations?user=SEtbpTcAAAAJ&hl=en>D. Agarwal</a>,
+    M. Rachh, and
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>,  
+    <i>J. Sci. Comput.</i>, 97(1):25, 2023 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2111.10743>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10915-023-02336-w>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+ 
+  <li>
+    A Neural Network Warm-Start Approach for the Inverse Acoustic Obstacle 
+    Scattering Problem <br>
+    <a href=https://scholar.google.com/citations?user=715DOtMAAAAJ&hl=en>M. Zhou</a>,
+    <a href=https://users.flatironinstitute.org/~jhan/>J. Han</a>,
+    M. Rachh, and, 
+    <a href=https://sciences.ucf.edu/math/borges/>C. Borges</a>,
+    J. Comput. Phys., 490:112341, 2023 
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2212.08736>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2023.112341>journal</a> 
+    </div>
+  </li>
+  <br> <br>
+
+  <li>
+    On the robustness of inverse scattering for penetrable, homogeneous 
+    objects with complicated boundary <br>
+    <a href=https://sciences.ucf.edu/math/borges/>C. Borges</a>, 
+    M. Rachh, and, 
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>,
+    Inverse Problems 39.3 (2023): 035004
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2210.11607>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1088/1361-6420/acb2ec>journal</a> 
+    </div>
+  </li>
+  <br> <br>
+
+  <li> 
+    Equispaced Fourier representations for efficient Gaussian process
+    regression from a billion data points <br>
+    <a href=https://www.simonsfoundation.org/people/philip-greengard/>P. Greengard</a>,  
+    M. Rachh, and
+    <a href=https://users.flatironinstitute.org/~ahb/>A. Barnett</a> 
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2210.10210>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/23M1565310>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+  <li> 
+    Quantum electrodynamics of chiral waveguide arrays <br>
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    M. Rachh, and
+    <a href=https://gauss.math.yale.edu/~js4228/>J. Schotland</a>,
+    Optics Letters 48.5 (2023): 1232-1235
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2210.04082>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1364/OL.477807>journal</a> 
+    </div>
+  </li> 
+  <br> <br>
+
+  <li>
+    FMM-LU: A fast direct solver for multiscale boundary integral equations in 
+    three dimensions <br>
+    <a href=https://scholar.google.com/citations?user=Z9s_W1QAAAAJ&hl=fr>D. Sushnikova</a>,
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>, and 
+    M. Rachh <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2201.07325>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/22M1514040>journal</a> 
+    </div>  
+  </li>  
+  <br> <br>
+
+  <li> 
+    Analysis of single-excitation
+    states in quantum optics <br>
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    <a href=https://users.flatironinstitute.org/~jkaye>J. Kaye</a>, 
+    M. Rachh, and
+    <a href=https://gauss.math.yale.edu/~js4228/>J. Schotland</a> 
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2110.07049>arxiv</a>
+    </div>
+  </li> 
+  <br> <br>
+  <li> 
+    A fast, high-order numerical method for the simulation of single-excitation
+    states in quantum optics <br>
+    <a href=http://www.jghoskins.com>J. Hoskins</a>,  
+    <a href=https://users.flatironinstitute.org/~jkaye>J. Kaye</a>, 
+    M. Rachh, and
+    <a href=https://gauss.math.yale.edu/~js4228/>J. Schotland</a>, 
+    J. Comput. Phys., 473:111723, 2023 
+    <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2109.06956>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2022.111723>journal</a> 
+    </div>
+  </li>  
+  <br> <br>
+  <li> 
+    Debye source representations for type-I superconductors, I <br>
+    <a href=https://www.math.upenn.edu/~cle/>C. Epstein</a>, 
+    and M. Rachh, J. Comput. Phys., 452:110892, 2022  <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2105.12246>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href="superconductor-forms.pdf">forms-version</a> 
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2021.110892>journal</a> 
+    </div>
+  </li>  
+  <br> <br>
+
+  <li>
+    Multifrequency inverse obstacle scattering with unknown impedance boundary 
+    conditions using recursive linearization <br>
+    <a href=https://sciences.ucf.edu/math/borges/>C. Borges</a>, 
+    and M. Rachh, Adv. Comput. Math. 48(1):1-32, 2022  <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2104.13489>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10444-021-09915-1>journal</a>
+    </div>
+  </li>   
+  <br> <br>
+
+  <li>
+    Fast multipole methods for evaluation of layer potentials
+    with locally-corrected quadratures <br>
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>, 
+    M. Rachh, and F. Vico, <i>J. Comput. Phys.</i>, X 10:100092, 2021 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2006.02545>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcpx.2021.100092>journal</a>
+    </div>  
+  </li>  
+  <br> <br>
+
+  <li> 
+    Recovering missing data in coherent diffraction imaging <br>
+    <a href=https://davidbar.org>D. Barmherzig</a>, 
+    <a href=https://users.flatironinstitute.org/~ahb> A. Barnett</a>, 
+    <a href=https://www.math.upenn.edu/~cle/>C. Epstein</a>, 
+    <a href=https://math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://users.flatironinstitute.org/~magland/>J. Magland</a>, 
+    and M. Rachh <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2002.02874>arxiv</a> 
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/20M134767X>journal</a>
+    </div>
+  </li>   
+  <br> <br>
+  <li> 
+    On the discretization of Laplace's equation with Neumann boundary 
+    conditions on polygonal domains <br>                
+    <a href=http://www.jghoskins.com>J. Hoskins</a>, and 
+    M. Rachh, <i>J.Comput. Phys. </i>, X 8: 100072, 2020  <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/2001.05434>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcpx.2020.100072>journal</a>
+    </div>  
+  </li>  
+  <br> <br>
+  <li>
+    A fast boundary integral method for high-order multiscale mesh 
+    generation <br> 
+    F. Vico, 
+    <a href=https://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    <a href=https://cims.nyu.edu/~oneil/>M. O'Neil</a>, and
+    M. Rachh, <i>SIAM J. Sci. Comput.</i>, 42(2):A1380-A1401, 2020 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1909.13356>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/19m1290450>journal</a>
+    </div>  
+  </li>  
+  <br> <br>
+  <li>
+    On the solution of Laplace's equation in the vicinity of 
+    triple-junctions <br>
+    <a href=http://www.jghoskins.com>J. Hoskins</a>, and
+    M. Rachh, <i> Pure Appl. Anal., </i> 2.2: 447-476, 2020 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1907.10718>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.2140/paa.2020.2.447>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    A boundary integral equation approach to computing eigenvalues 
+    of the Stokes operator <br> 
+    <a href=http://askhamwhat.github.io/>T. Askham</a>, and 
+    M. Rachh, <i> Adv. Comput. Math. </i> 46(2), 2020 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1904.07351>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10444-020-09774-2>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    Fast interpolation-based t-SNE for improved visualization of 
+    single-cell RNA-seq data<br>
+    <a href=http://gauss.math.yale.edu/~gcl22>G. Linderman</a>,
+    M. Rachh, 
+    <a href=http://www.jghoskins.com>J. Hoskins</a>, 
+    <a href=http://users.math.yale.edu/users/steinerberger/>S. Steinerberger</a>, 
+    and <a href=https://medicine.yale.edu/lab/kluger>Y. Kluger</a>,
+    <i> Nat. Methods </i> 16(3):243-245, 2019<br> 
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1712.09005>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1038/s41592-018-0308-4>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    On the solution of Stokes equation on regions with corners <br>
+    M. Rachh, and K. Serkh, <i>Comm. Pure Appl. Math.</i> 73.11: 2295-2369, 2020<br>  
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1711.04072>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1002/cpa.21937>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    A fluctuating boundary integral method for Brownian suspensions<br>
+    <a href=http://www.cims.nyu.edu/~billbao/>Y. Bao</a>, 
+    M. Rachh, 
+    <a href=http://wwwf.imperial.ac.uk/~ekeaveny/index.html>E. Keaveny</a>, 
+    <a href=http://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    and <a href=http://cims.nyu.edu/~donev/> A. Donev</a>, 
+    <i> J. Comput. Phys. </i>, 374:1094-1119, 2018<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1709.01480>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2018.08.021>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    Integral equation formulation of the biharmonic Dirichlet problem <br>
+    M. Rachh, and 
+    <a href=http://askhamwhat.github.io/>T. Askham</a>, 
+    <i>J. Sci. Comput.</i>, 75(2):762-781, 2017 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1705.09715>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1007/s10915-017-0559-8>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    Optimal Jittered Sampling for two points in the unit square <br> 
+    <a href=http://pub.ist.ac.at/~pausinger/>F. Pausinger</a>,
+    M. Rachh, and
+    <a href=http://users.math.yale.edu/users/steinerberger/>S. Steinerberger</a>, 
+    <i> Statistics and Probability Letters </i>, 132:44-61, 2018 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1704.05535>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.spl.2017.09.010>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    On the diffusion geometry of Graph Laplacians and applications <br> 
+    <a href=http://users.math.yale.edu/users/xc289/>X. Cheng</a>,
+    M. Rachh, and 
+    <a href=http://users.math.yale.edu/users/steinerberger/>S. Steinerberger</a>, 
+    <i>Appl. Comput. Harmon. Anal.,</i> 46(3):674-688, 2019<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1611.03033>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.acha.2018.04.001>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    On the location of maxima of solutions of Schr&#246;dinger's equation<br>
+    M. Rachh, 
+    <a href=http://users.math.yale.edu/users/steinerberger/>S. Steinerberger</a>,
+    <i>Comm. Pure Appl. Math., </i> 71(6):1109-1122, 2018 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1608.06604>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1002/cpa.21753>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    An efficient high order method for dislocation climb in two 
+    dimensions <br>
+    <a href= https://web.njit.edu/~jiang/> S. Jiang</a>, 
+    M. Rachh, and 
+    <a href=http://www.math.ust.hk/~maxiang/>Y. Xiang</a>, 
+    <i>Multiscale Model. Simul.,</i> 15(1): 235-253, 2017<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/16m1081920>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    An integral equation formulation for rigid bodies in Stokes flow 
+    in three dimensions <br>
+    <a href=http://cims.nyu.edu/~corona/>E. Corona</a>,
+    <a href=http://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>, 
+    M.Rachh, and
+    <a href=http://www.math.lsa.umich.edu/~shravan/>S. Veerapaneni</a>,
+    <i> J. Comput. Phys.,</i> 332:504-519, 2017<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/pdf/1606.07428>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2016.12.018>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    A coarse-grained computational model of the nuclear pore complex 
+    predicts Phe-Gly nucleoporin dynamics <br>
+    J. Pulupa, M. Rachh, M. Tomasini, 
+    <a href=http://www.mountsinai.org/profiles/joshua-s-mincer>J. Mincer</a>, 
+	and,
+    <a href=http://www.rockefeller.edu/research/faculty/labheads/SanfordSimon/#content>S. Simon</a>,
+    <i> J. Gen. Physiol.,</i> 149(10):951-966, 2017 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1085/jgp.201711769>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li> 
+    Fast algorithms for Quadrature by Expansion I: 
+    Globally valid expansions<br>
+    M. Rachh, 
+    <a href=https://mathema.tician.de/aboutme/>A. Kl&#246;ckner</a>,
+    and <a href=http://cims.nyu.edu/~oneil>M. O'Neil</a>,  
+    <i>J. Comput. Phys.</i>, 345:706-731, 2017<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1602.05301>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2017.04.062>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    Accurate derivative evaluation for any Grad-Shafranov solver<br> 
+    <a href=http://cims.nyu.edu/~lfr224/>L. Ricketson</a>, 
+    <a href=http://www.math.nyu.edu/~cerfon/>A. Cerfon</a>, 
+    M. Rachh, and 
+    <a href=http://web.mit.edu/nse/people/faculty/freidberg.html>J. Freidberg</a>,
+    <i>J. Comput. Phys.,</i> 305:744-757, 2016<br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1507.07444>arxiv</a> 
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1016/j.jcp.2015.11.015>journal</a>
+    </div>
+  </li>
+  <br> <br>
+  <li>
+    Integral equation methods for elastance and mobility
+    problems in two dimensions<br> 
+    M. Rachh, and
+    <a href=http://www.math.nyu.edu/faculty/greengar/>L. Greengard</a>,
+    <i> SIAM J. Numer. Anal.,</i> 54(5):2889-2909, 2016 <br>
+    <div class="centered" id="jlink">
+    <a class="button3" style="text-decoration:none" 
+    href=https://arxiv.org/abs/1507.05925>arxiv</a>
+    &nbsp;
+    <a class="button3" style="text-decoration:none" 
+    href=https://doi.org/10.1137/15m103251x>journal</a>
+    </div>
+  </li>
+  <br> <br>
+
+</ul>	
 
 
 
