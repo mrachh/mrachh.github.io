@@ -1,7 +1,7 @@
 ---
 permalink: /cam/
 title: "CAM document links"
-author_profile: false
+author_profile: true
 redirect_from: 
   - "/cam/"
   - "/cam.html"
